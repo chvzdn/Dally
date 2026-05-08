@@ -87,23 +87,16 @@ report.txt
 
 ## Author 
 Developed as a school project by:
-- Renelyn May C. Dino
-- Princess Sharmelle Betis
-- Arlan Guañizo Jr.
+- Renelyn May C. Dino ([GitHub Profile of Dino](https://github.com/chvzdn))
+- Princess Sharmelle Betis ([GitHub Profile of Betis](https://github.com/betisprincesssharmelle-boop))
+- Arlan Guañizo Jr. ([GitHub Profile of Guañizo](https://github.com/arlanjrguanizo94-stack?fbclid=IwY2xjawRqk3VleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeiWgKMRaiwMlvR0e6XPxZIu3KObxTaRI1FLVIGKK3E9mgsQKAC2Z4-89xQkk_aem_ws-JIW5dkC9n7-Vd271urQ))
 
 BSIT Students at Sorsogon State University Bulan Campus.
 
-[GitHub Profile of Dino](https://github.com/chvzdn)
-
-[GitHub Profile of Betis](https://github.com/betisprincesssharmelle-boop)
-
-[GitHub Profile of Guañizo](https://github.com/arlanjrguanizo94-stack?fbclid=IwY2xjawRqk3VleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeiWgKMRaiwMlvR0e6XPxZIu3KObxTaRI1FLVIGKK3E9mgsQKAC2Z4-89xQkk_aem_ws-JIW5dkC9n7-Vd271urQ)
-
-
-## Final Project
+### Final Project
 In Partial Fulfillment of the Requirements for the Subject CC103 Computer Programming 2 Under the Course of Bachelor of Science in Information Technology. With the Supervision of our Professor John Mark Gabrentina.
 
-## Notes
+### Notes
 - Basic input validation only (`strip()` checks)
 - Focus is on OOP structure, not advanced error handling
 - Designed for educational purposes
