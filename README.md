@@ -98,5 +98,5 @@ In Partial Fulfillment of the Requirements for the Subject CC103 Computer Progra
 - Focus is on OOP structure, not advanced error handling
 - Designed for educational purposes
 
-## sharmelle
+
 ## arlan
