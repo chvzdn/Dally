@@ -31,6 +31,6 @@ def test_add_note():
 # TEST: Clear schedule
 def test_clear_schedule():
     service = ScheduleService()
-    service.assign("Math", "3PM", "Exam")
+    service.assign("May 11, 2026", "3PM", "Math Exam")
     service.clear()
     assert len(service.get_all()) == 0
