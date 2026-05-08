@@ -1,4 +1,9 @@
 class IDataService:
+    """
+    Interface for all data services.
+    Demonstrates polymorphism.
+    """
+
     def add(self, item):
         raise NotImplementedError
 
