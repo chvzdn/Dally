@@ -1,20 +1,28 @@
 from interfaces.data_service import IDataService
+from models.task import Task
+
 
 class TaskService(IDataService):
+    """
+    Handles task operations. (create, update, delete)
+    Implements IDataService
+    """
 
     def __init__(self):
         self._tasks = []
 
     def add(self, item):
-        self._tasks.append({
-            "task": item,
-            "completed": False
-        })
+        # Add new task
+        if item.strip():
+            self._tasks.append(Task(item))
 
     def toggle(self, index, value):
-        self._tasks[index]["completed"] = value
+        # Mark task as completed/uncompleted
+        if 0 <= index < len(self._tasks):
+            self._tasks[index].mark_completed(value)
 
     def delete(self, index):
+        # Delete task by index
         if 0 <= index < len(self._tasks):
             self._tasks.pop(index)
 
