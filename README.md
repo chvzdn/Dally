@@ -41,7 +41,7 @@ DallyPlanner/
 │   ├── task_service_impl.py
 │   ├── notes_service_impl.py
 │   ├── schedule_service_impl.py
-│   └── report_service_impl.py
+│   └── report_service.py
 │
 ├── ui/
 │   └── main_gui.py
