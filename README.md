@@ -87,14 +87,18 @@ report.txt
 
 ## Author 
 Developed as a school project by:
-- Renelyn Dino
+- Renelyn May C. Dino
 - Princess Sharmelle Betis
 - Arlan Guañizo Jr.
 
 BSIT Students at Sorsogon State University Bulan Campus.
-[GitHub Profile](https://github.com/chvzdn)
-[GitHub Profile](https://github.com/betisprincesssharmelle-boop)
-[GitHub Profile](https://github.com/arlanjrguanizo94)
+
+[GitHub Profile of Dino](https://github.com/chvzdn)
+[GitHub Profile of Betis](https://github.com/betisprincesssharmelle-boop)
+[GitHub Profile of Guañizo](https://github.com/arlanjrguanizo94)
+
+## Final Project
+In Partial Fulfillment of the Requirements for the Subject CC103 Computer Programming 2 Under the Course of Bachelor of Science in Information Technology. With the Supervision of our Professor John Mark Gabrentina.
 
 ## Notes
 - Basic input validation only (`strip()` checks)
