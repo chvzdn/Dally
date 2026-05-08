@@ -4,22 +4,59 @@
 Dally: Task Schedule Planner is a standalone Python application designed to help users efficiently organize their daily tasks, schedules, and personal notes in one centralized system.
 
 The application allows users to:
-- Create and manage tasks, including marking them as completed
-- Organize daily schedules by assigning tasks to specific dates and times
-- Store and manage short notes for reminders or important information
-- View a summarized dashboard that presents all tasks, notes, and schedules in a structured format
+- Create and manage tasks, including deleting and marking them as completed.
+- Organize daily schedules by assigning tasks to specific dates and times.
+- Store and manage short notes for reminders or important information.
+- View a summarized dashboard that presents all tasks, notes, and schedules in a structured format. And can export the report to a `.txt` file.
 
 Built with a clean graphical user interface, the system emphasizes simplicity, usability, and accessibility. It operates entirely offline and follows a structured Input → Process → Output model, ensuring reliable performance without relying on external databases or internet connectivity.
 
 Through this application, users can improve their time management, maintain organization, and increase productivity by having all essential planning tools in a single, easy-to-use platform.
 
+## OOP Concepts Used
+This project demonstrates core Object-Oriented Programming principles:
+- Encapsulation: Private attributes using `_variable`
+- Abstraction: `IDataService` interface defines standard methods
+- Polymorphism: Task, Notes, and Schedule services implement the same interface methods
+- Modularity: Code is separated into models, services, interfaces, UI, and tests
+
 ## Technologies Used
 - Python (core programming language)
-- GUI framework (Tkinter or similar)
+- GUI framework (Tkinter)
 - File handling for saving and retrieving tasks and notes
 
+# Project Structure
+```
+DallyPlanner/
+│
+├── interfaces/
+│   └── data_service.py
+│
+├── models/
+│   ├── task.py
+│   ├── note.py
+│   └── schedule.py
+│
+├── services/
+│   ├── task_service_impl.py
+│   ├── notes_service_impl.py
+│   ├── schedule_service_impl.py
+│   └── report_service_impl.py
+│
+├── ui/
+│   └── main_gui.py
+│
+├── tests/
+│   └── test_services.py
+│
+├── main.py
+└── report.txt (generated after export)
+```
+
 ## How to Run
-1. Clone this repository:
+1. Requirements
+Python 3.x
+2. Clone this repository:
    ```bash
    git clone https://github.com/chvzdn/dally.git
 
@@ -27,11 +64,40 @@ Through this application, users can improve their time management, maintain orga
   ```bash
   cd dally
   ```
-## Run the application:
+
+## Run the Application:
   ```bash
   python main.py
   ```
+
+## Running Tests
+Run tests using pytest:
+```bash
+pytest tests/
+```
+
+## Export Report
+Inside the application:
+1. Go to the Report tab
+2. Click Export Report
+3. Output file will be saved as:
+```
+report.txt
+```
+
 ## Author 
-Developed by Renelyn Dino, BSIT student at Sorsogon State University Bulan Campus.
+Developed as a school project by:
+- Renelyn Dino
+- Princess Sharmelle Betis
+- Arlan Guañizo Jr.
+
+BSIT Students at Sorsogon State University Bulan Campus.
 [GitHub Profile](https://github.com/chvzdn)
+[GitHub Profile](https://github.com/betisprincesssharmelle-boop)
+[GitHub Profile](https://github.com/arlanjrguanizo94)
+
+## Notes
+- Basic input validation only (`strip()` checks)
+- Focus is on OOP structure, not advanced error handling
+- Designed for educational purposes
 
