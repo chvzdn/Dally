@@ -76,7 +76,9 @@ Run tests using pytest:
 pytest tests/
 ```
 Run automated tests using:
+```bash
 py -m pytest -v
+```
 
 ## Export Report
 Inside the application:
