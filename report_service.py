@@ -13,25 +13,21 @@ class ReportService:
 
     def generate_report(self):
         # Builds a formatted summary report
-
         report = []
 
         # TASK SECTION
         report.append("TASKS")
-
         for task in self._task_service.get_all():
             status = "✔" if task.completed else "○"
             report.append(f"{status} {task.title}")
 
         # NOTES SECTION
         report.append("\nNOTES")
-
         for note in self._note_service.get_all():
             report.append(f"- {note.content}")
 
         # SCHEDULE SECTION
         report.append("\nSCHEDULE")
-
         for sched in self._schedule_service.get_all():
             report.append(
                 f"{sched.date} {sched.time} -> {sched.task}"
@@ -41,8 +37,8 @@ class ReportService:
 
     def export_report(self, filename="report.txt"):
         # Export and saves report into a .txt file
-
-        report = self.generate_report()
-
-        with open(filename, "w", encoding="utf-8") as file:
-            file.write(report)
+        try:
+            with open(filename, "w", encoding="utf-8") as file:
+                file.write(self.generate_report())
+        except Exception as e:
+            raise Exception(f"Export failed: {str(e)}")
