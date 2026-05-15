@@ -1,7 +1,6 @@
 from interfaces.data_service import IDataService
 from models.note import Note
 
-
 class NotesService(IDataService):
     """
     Handles note operations
@@ -13,9 +12,10 @@ class NotesService(IDataService):
         self._notes = []
 
     def add(self, item):
-        # Adds a new note if input is not empty
-        if item.strip():
-            self._notes.append(Note(item))
+        if not item or not item.strip():
+            raise ValueError("Note cannot be empty")
+
+        self._notes.append(Note(item.strip()))
 
     def delete(self, index):
         # Removes note if index is valid
