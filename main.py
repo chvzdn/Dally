@@ -1,5 +1,4 @@
 import tkinter as tk
-
 from ui.main_gui import DallyPlannerApp
 
 from services.task_service_impl import TaskService
