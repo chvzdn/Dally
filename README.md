@@ -71,13 +71,13 @@ Python 3.x
   ```
 
 ## Running Tests
-Run tests using pytest:
-```bash
-pytest tests/
-```
-Run automated tests using:
+Run automated tests using pytest: 
 ```bash
 py -m pytest -v
+```
+Or run all tests in the tests folder:
+```bash
+pytest tests/
 ```
 
 ## Export Report
