@@ -1,7 +1,6 @@
 from interfaces.data_service import IDataService
 from models.task import Task
 
-
 class TaskService(IDataService):
     """
     Handles task operations. (create, update, delete)
@@ -12,9 +11,11 @@ class TaskService(IDataService):
         self._tasks = []
 
     def add(self, item):
-        # Add new task
-        if item.strip():
-            self._tasks.append(Task(item))
+        # Add new task if input is not empty
+        if not item or not item.strip():
+            raise ValueError("Task cannot be empty")
+
+        self._tasks.append(Task(item.strip()))
 
     def toggle(self, index, value):
         # Mark task as completed/uncompleted
