@@ -1,7 +1,6 @@
 from interfaces.data_service import IDataService
 from models.schedule import Schedule
 
-
 class ScheduleService(IDataService):
     """
     Handles scheduling operations (date + time + task)
@@ -11,13 +10,14 @@ class ScheduleService(IDataService):
         self._schedule = []
 
     def add(self, item):
-        self._schedule.append(item)
+        raise NotImplementedError
 
     def assign(self, task, time, date):
         # Adds a schedule entry
-        if task.strip() and time.strip() and date.strip():
-            self._schedule.append(
-                Schedule(task, time, date)
+        if not task.strip() or not time.strip() or not date.strip():
+            raise ValueError("All schedule fields are required")
+
+        self._schedule.append(Schedule(task, time, date))
             )
 
     def delete(self, index):
