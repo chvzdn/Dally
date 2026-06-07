@@ -18,7 +18,6 @@ class ScheduleService(IDataService):
             raise ValueError("All schedule fields are required")
 
         self._schedule.append(Schedule(task, time, date))
-            )
 
     def delete(self, index):
         # Deletes schedule entry
